@@ -1,4 +1,4 @@
-jQuery-Responsive-Text-Plugin
+jQuery Responsive Text Plugin
 =============================
 
 The jQuery Responsive Text Plugin is an all in one solution for creating cross browser, scalable fonts.  This comes in handy creating fully responsive layouts that look the same on any device.
