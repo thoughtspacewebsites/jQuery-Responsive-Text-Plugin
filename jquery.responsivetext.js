@@ -40,17 +40,29 @@
 		var windowWidth = $(window).width();
 		if(windowWidth > settings.breakPoint){
 			if(windowWidth < settings.topStop){
-				var newBodyFontSize = windowWidth / 75;
-				$("body").css({"font-size":newBodyFontSize});
+				if(windowWidth > settings.bottomStop){
+					var newBodyFontSize = windowWidth / 75;
+					$("body").css({"font-size":newBodyFontSize});
+				}
+				else{
+					var newBodyFontSize = settings.bottomStop / 75;
+                                	$("body").css({"font-size":newBodyFontSize});
+				}
 			}
 			else{
-				var newBodyFontSize = settings.topStop / 75;
+				var newBodyFontSize = settiings.topStop / 75;
                                 $("body").css({"font-size":newBodyFontSize});
 			}
 		}
-		else if(windowWidth <= settings.breakPoint && windowWidth > settings.bottomStop){
-			var newBodyFontSize = windowWidth / 50;
-                        $("body").css({"font-size":newBodyFontSize});
+		else if(windowWidth <= settings.breakPoint){
+			if(windowWidth > settings.bottomStop){
+				var newBodyFontSize = windowWidth / 50;
+                        	$("body").css({"font-size":newBodyFontSize});
+			}
+			else{
+				var newBodyFontSize = settings.bottomStop / 50;
+                                $("body").css({"font-size":newBodyFontSize});
+			}
 		}
 		var bodyFontSize = parseFloat($("body").css("font-size"));
 		$(".responsive-text").each(function(){
