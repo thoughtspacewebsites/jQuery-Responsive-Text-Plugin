@@ -82,7 +82,7 @@ topStop is a number used to specify at what screen width elements with the "resp
 bottomStop is a number used to specify at what screen width elements with the "responsive-text" class should stop shrinking in size.  This value should always be less than and *topStop*.
 
 ###breakPoint
-*int - default: 768"
+*int - default: 768*
 
 breakPoint is a number used to specify at what screen width elements with the "responsive-text" class should increase in size for mobile devices.  This value should always be less than *topStop*.  If you'd like to disable this option, you can set it o 0.
 
