@@ -50,7 +50,7 @@
 				}
 			}
 			else{
-				var newBodyFontSize = settiings.topStop / 75;
+				var newBodyFontSize = settings.topStop / 75;
                                 $("body").css({"font-size":newBodyFontSize});
 			}
 		}
